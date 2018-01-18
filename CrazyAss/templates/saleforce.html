@@ -1,0 +1,839 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="" style="display:none !important;"><head><title>Dashboard: Canada Dashboard Q3 ~ Salesforce - Unlimited Edition</title><script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/jslibrary/1501092696000/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/AccessibleDialog.js" type="text/javascript"></script><script src="/EXT/ext-3.3.3/ext.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/AnalyticsFramework.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/DashboardViewDialog.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/DashboardView.js" type="text/javascript"></script><script src="/projRes/analytics-dashboard-impl/gen/dbgwtclient/dbgwtclient.nocache.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/AutoCompleteCombo.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/main.js" type="text/javascript"></script><script src="/jslibrary/jslabels/1515447180000/en_US.js" type="text/javascript"></script><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/zen-componentsCompatible.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/elements.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/common.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512982208000/Theme3/gc/dStandard.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1515388641000/Theme3/00Do0000000IJig/0051J000004u6y8/gc/dCustom0.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1515388641000/Theme3/00Do0000000IJig/0051J000004u6y8/gc/dCustom1.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1515388641000/Theme3/00Do0000000IJig/0051J000004u6y8/gc/dCustom2.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1515388641000/Theme3/00Do0000000IJig/0051J000004u6y8/gc/dCustom3.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1515388641000/Theme3/00Do0000000IJig/0051J000004u6y8/gc/dCustom4.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/extended.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/setup.css" rel="stylesheet" type="text/css" /><link class="user" href="/EXT/ext-3.3.3/resources/css/ext-all-notheme.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/ExtCSS-SFDC.css" rel="stylesheet" type="text/css" /><link class="user" href="/projRes/gwt-common/GXT/GXT-2.2.4/resources/css/gxt-with-ext-all.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/dashboard.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/dashboardViewCommon.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/dashboardView.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/zen-accessibility.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/chatterCore.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/chatterExtended.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/accombo.css" rel="stylesheet" type="text/css" /><script type="text/javascript">
+//<![CDATA[
+try{(function(){var w=self,l,p,o;if(w&&top){for(;w!==top&&(p=w.parent)&&p!==w&&(o=p.location)&&o.protocol===(l=w.location).protocol&&(o.host===l.host||(p.document&&p.document.domain===w.document.domain));w=p);if(w!==top)throw "";}({f:function(){document.documentElement?document.documentElement.style.display="":(!this.a&&(this.a=10),this.a<1E5&&(window.sfdcRetryShowWindow=this)&&setTimeout("sfdcRetryShowWindow.f()",this.a),this.a*=2)}}.f())})();}catch(e){if(top!==self)top.location=location;else throw e;}//]]></script><script>window.sfdcPage = new GenericSfdcPage();
+UserContext.initialize({"ampm":["AM","PM"],"isAccessibleMode":false,"uiSkin":"Theme3","salesforceURL":"https://hdscorp.my.salesforce.com","dateFormat":"M/d/yyyy","language":"en_US","locale":"en_US","userName":"chao.liu@hitachivantara.com.prod","userId":"0051J000004u6y8","isCurrentlySysAdminSU":false,"renderMode":"RETRO","startOfWeek":"1","vfDomainPattern":"hdscorp--(?:[^.]+).na74.visual.force.com","auraDomain":"hdscorp.lightning.force.com","dateTimeFormat":"M/d/yyyy h:mm a","orgPreferences":[{"index":257,"name":"TabOrganizer","value":true},{"index":113,"name":"GroupTasks","value":true}],"siteUrlPrefix":"","isDefaultNetwork":true,"labelLastModified":"1515447180000","today":"1/8/2018 11:10 PM","timeFormat":"h:mm a","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":193,"name":"HideChatterOnboardingSplash","value":false},{"index":195,"name":"HideSecondChatterOnboardingSplash","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":true},{"index":226,"name":"ShowDevContextMenu","value":false},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":265,"name":"HideSocialProfilesKloutSplashScreen","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":301,"name":"HideManyWhoGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false},{"index":302,"name":"HideManyWhoInlineEditTip","value":false},{"index":303,"name":"HideSetupV2WelcomeMessage","value":false},{"index":312,"name":"ForecastingShowQuantity","value":false},{"index":313,"name":"HideDataImporterIntroMsg","value":false},{"index":314,"name":"HideEnvironmentHubLightbox","value":false},{"index":316,"name":"HideSetupV2GuidedTour","value":false},{"index":317,"name":"HideFileSyncMobileDownloadDialog","value":false},{"index":322,"name":"HideEnhancedProfileHelpBubble","value":false},{"index":328,"name":"ForecastingHideZeroRows","value":false},{"index":330,"name":"HideEmbeddedComponentsFeatureCallout","value":false},{"index":341,"name":"HideDedupeMatchResultCallout","value":false},{"index":340,"name":"HideS1BrowserUI","value":false},{"index":346,"name":"HideS1Banner","value":false},{"index":358,"name":"HideEmailVerificationAlert","value":false},{"index":354,"name":"HideLearningPathModal","value":false},{"index":359,"name":"HideAtMentionsHelpBubble","value":false},{"index":368,"name":"LightningExperiencePreferred","value":false}],"networkId":""});
+</script><script type="text/javascript">
+var MOTIF_KEY='Dashboard';</script><link rel="shortcut icon" href="https://hdscorp.my.salesforce.com/favicon.ico" />
+<script src="/jslibrary/1510689194000/sfdc/Security.js"></script><script>ClientHash.prototype.needsClientHash('sid_Client','J000004u6y80000000IJig','45.249.212.50','/servlet/servlet.ClientHashValidator?ResponseRequestedURL=%2F01Z1J000001Ifa2');</script></head><body onUnload="if(this.bodyOnUnload)bodyOnUnload();" onBeforeUnload="if(this.bodyOnBeforeUnload){var s=bodyOnBeforeUnload();if(s)return s;}" onLoad="if(this.bodyOnLoad)bodyOnLoad();" class="hasMotif dashboardTab  sfdcBody brandQuaternaryBgr" onFocus="if(this.bodyOnFocus)bodyOnFocus();">
+<!-- Main Body Starts Here -->
+<form  accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" id="sessiontimeout" method="post" name="sessiontimeout" onsubmit="if (window.ffInAlert) { return false; }" ><input type="hidden" name="continueButton" id="continueButton" value="Continue Working" /><input type="hidden" name="doNotTimeoutLocation" id="doNotTimeoutLocation" value="/page/timeoutrefresh.jsp" /><input type="hidden" name="doTimeoutLocation" id="doTimeoutLocation" value="https://oam.hds.com/oam/server/logout?end_url=https%3A%2F%2Fsso.hds.com%2Fcontent%2Flogin-page.html&amp;stbdtimeout=1" /><input type="hidden" name="logoutButton" id="logoutButton" value="Logout" /><input type="hidden" name="timeoutText" id="timeoutText" value="For security reasons, your salesforce.com session is about to time out.<br><br>What would you like to do?" /></form><script>var secondsLeftValue=7187,secondsPopupValue=7157,lastPageActivityTime=(new Date).getTime(),forceLogout=false;function startSessionTimer(){schedulePopup(7187,7157)}function schedulePopup(a,b){null!=timeoutUniqueId&&clearTimeout(timeoutUniqueId);forceLogout&&null!=redirectUniqueId&&clearTimeout(redirectUniqueId);if (forceLogout) {redirectUniqueId=setTimeout(logout,1E3*a);}timeoutUniqueId=setTimeout(alertTimeout,1E3*b)}function logout(){(forceLogout && "function"==typeof getRTimeout)?getRTimeout():doLogout()} function doLogout(){window.location="/secur/logout.jsp"}var alertWindow=null,parentWindow=null,timeoutUniqueId=null;redirectUniqueId=null;function updateSessionTimeouts(a,b){"undefined"!=typeof a&&(secondsLeftValue=a);"undefined"!=typeof b&&(secondsPopupValue=b);lastPageActivityTime=(new Date).getTime();schedulePopup(secondsLeftValue,secondsPopupValue);if(window.Sfdc&&Sfdc.require&&"undefined"!=typeof SFDCSessionVars){Sfdc.require("SfdcApp.SfdcSession",function(){SfdcApp.SfdcSession.updateExpires({oid:SFDCSessionVars.oid,uid:UserContext.userId,expire:lastPageActivityTime+(secondsLeftValue*1000)})});}}function updateRedirectTimeouts(a){"undefined"!=typeof a&&(secondsLeftValue=a);null!=redirectUniqueId&&clearTimeout(redirectUniqueId);redirectUniqueId=setTimeout(logout,1E3*(secondsLeftValue));}function alertTimeout(){"function"==typeof getSTimeout?getSTimeout():doAlertTimeout()}function doAlertTimeout(){timeoutUniqueId=null;alertWindow=window.open("/page/timeoutwarn.jsp","_sTohdscorp_my_salesforce_com","width=360,height=280,location=no,dependent=no,resizable=yes,toolbar=no,status=no,directories=no,menubar=no,scrollbars=yes",!1);parentWindow=window;!alertWindow&&forceLogout&&setTimeout(parentWindow.doLogout,25E3);document.body.onfocus=alertFocus}function checkSessionTimeout(){var a=(new Date).getTime();5>=secondsLeftValue-(a-lastPageActivityTime)/1E3?(a=window.location.pathname+window.location.hash,window.location.search&&1<window.location.search.length&&(a+=window.location.search),a="/?ec=302&startURL="+encodeURIComponent(a),top.location=a):(lastPageActivityTime=a,startSessionTimer())}function alertFocus(){alertWindow&&(alertWindow.closed?(alertWindow=null,document.body.onfocus=closePopup):alertWindow.focus())}</script><a href="#skiplink" class="navSkipLink zen-skipLink zen-assistiveText">Skip to main content</a><div id="contentWrapper"><div class="bPageHeader" id="AppBodyHeader"><table  class="phHeader phHeaderCustomLogo brandZeronaryBgr phTabSetCustomLogo" border="0" cellpadding="0" cellspacing="0" id="phHeader"><tr><td class="left"><div style="height:55px;" ><img src="https://hdscorp--c.na74.content.force.com/servlet/servlet.ImageServer?id=015o00000035MCy&amp;oid=00Do0000000IJig&amp;lastMod=1487861204000" alt="" id="phHeaderLogoImage" onload="javascript:scaleImage(this, 55,300);this.scaled=true;" title="" /></div><img src="/img/s.gif" alt="" width="1" height="1" class="spacer" title="" /></td><td class="searchCell"><form  accept-charset="UTF-8" action="/_ui/search/ui/UnifiedSearchResults" enctype="application/x-www-form-urlencoded" id="phSearchForm" method="GET" name="sbsearch" onsubmit="if (window.ffInAlert) { return false; }" ><input type="hidden" name="searchType" id="searchType" value="2" /><input type="hidden" name="sen" id="sen0" value="005" /><input type="hidden" name="sen" id="sen1" value="500" /><input type="hidden" name="sen" id="sen2" value="a2G" /><input type="hidden" name="sen" id="sen3" value="0WO" /><div class="headerSearchContainer" id="phSearchContainer"><div class="headerSearchLeftRoundedCorner"><div class="searchBoxClearContainer"><input  autocomplete="off" id="phSearchInput" maxlength="100" name="str" placeholder="Search..." size="20" title="Search..." type="text" value="" /><a class="headerSearchClearButton" href="javascript: void(0);" id="phSearchClearButton" name="phSearchClearButton" style="visibility:hidden" title="Clear search terms"></a></div><div class="headerSearchRightRoundedCorner" id="searchButtonContainer"><input value="Search"  id="phSearchButton" type="button" /></div></div></div></form></td><td class="right"><div class="multiforce"><div class="messages"></div><div class="navLinks"><div class="linkElements"><div class="menuButton menuButtonRounded" id="userNav" title="User menu for Chao Liu"><div class="menuButtonButton" id="userNavButton"><span  class="menuButtonLabel" id="userNavLabel" tabindex="0">Chao Liu</span><div class="userNav-buttonArrow mbrButtonArrow" id="userNav-arrow"></div><div class="userNavButton-btm mbrButton-btm mbrButton-rc"></div></div><div class="menuButtonMenu" id="userNavMenu"><div class="userNavMenu-tr mbrMenu-tr mbrMenu-rc"></div><div class="userNavMenu-tl mbrMenu-tl mbrMenu-rc"></div><div class="mbrMenuItems" id="userNav-menuItems"><a href="/_ui/core/userprofile/UserProfilePage" class="menuButtonMenuLink firstMenuItem" title="My Profile">My Profile</a><a href="/ui/setup/Setup?setupid=PersonalSetup" class="menuButtonMenuLink" title="My Settings">My Settings</a><a href="javascript:sfdcPage.handleSwitchToLightningClick(%27LightningExperiencePreferred%27,true,%27/lightning/switcher?destination=lex%27);" class="menuButtonMenuLink" title="Meet the Switcher. Use this link to switch between Salesforce Classic and Lightning Experience whenever you want.">Switch to Lightning Experience</a><a href="/secur/logout.jsp" class="menuButtonMenuLink" title="Logout">Logout</a></div><div class="userNavMenu-br mbrMenu-br mbrMenu-rc"></div><div class="userNavMenu-bc mbrMenu-bc"></div><div class="userNavMenu-bl mbrMenu-bl mbrMenu-rc"></div></div></div><script>new MenuButtonRounded('userNav', false,16);</script><a href="javascript:openPopupFocusEscapePounds(%27https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Flanguage%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&amp;site=https%3A%2F%2Fhelp.salesforce.com%27, %27Help%27, 1024, 768, %27width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no%27, false, false);" class="brandZeronaryFgr" title="Help &amp; Training (New Window)">Help &amp; Training</a></div></div><div id="toolbar">
+<!-- TabSet drop down -->
+<div class="menuButton menuButtonRounded appSwitcher" id="tsid" title="Force.com App Menu"><div class="menuButtonButton" id="tsidButton"><span  class="menuButtonLabel" id="tsidLabel" tabindex="0">4.0 - Services</span><div class="tsid-buttonArrow mbrButtonArrow" id="tsid-arrow"></div><div class="tsidButton-btm mbrButton-btm mbrButton-rc"></div></div><div class="menuButtonMenu" id="tsidMenu"><div class="tsidMenu-tr mbrMenu-tr mbrMenu-rc"></div><div class="tsidMenu-tl mbrMenu-tl mbrMenu-rc"></div><div class="mbrMenuItems" id="tsid-menuItems"><a href="/_ui/core/chatter/ui/ChatterPage?tsid=02uo0000000Jd8S" class="menuButtonMenuLink firstMenuItem">Salesforce Chatter</a><a href="/home/home.jsp?tsid=02uo0000000CWWe" class="menuButtonMenuLink">Marketo Lead Management</a><a href="/home/home.jsp?tsid=02uo0000000CWWf" class="menuButtonMenuLink">Data.com Assessment</a><a href="/home/home.jsp?tsid=02uo0000000CWWg" class="menuButtonMenuLink">Xactly Incent</a><a href="/servlet/servlet.Integration?lid=01ro0000000xMsC&amp;ic=1&amp;linkToken=VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQxTkRaYSxsTjBmVEMtR1dOcHVsSDZhcDlDNVJRLFlXWmtNR0po&amp;tsid=02uo0000000CWWh" class="menuButtonMenuLink">Drag, Drop &amp; Upload</a><a href="/home/home.jsp?tsid=02uo0000000CWYu" class="menuButtonMenuLink">Content</a><a href="/console?tsid=02uo0000000CWfO" class="menuButtonMenuLink">Service Console</a><a href="/servlet/servlet.Integration?lid=01ro0000000xNBl&amp;ic=1&amp;linkToken=VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQxTkRaYSxsTjBmVEMtR1dOcHVsSDZhcDlDNVJRLFlXWmtNR0po&amp;tsid=02uo0000000CWgk" class="menuButtonMenuLink">Super Clone Pro</a><a href="/home/home.jsp?tsid=02u1J000000pFZP" class="menuButtonMenuLink">Salesforce Billing</a><a href="/home/home.jsp?tsid=02u1J000000pFZQ" class="menuButtonMenuLink">Salesforce Billing Configuration</a><a href="/home/home.jsp?tsid=02u1J000000pFdw" class="menuButtonMenuLink">Field Service</a><a href="/home/home.jsp?tsid=02u1J000000pFdx" class="menuButtonMenuLink">Field Service Admin</a><a href="/home/home.jsp?tsid=02u1J000000pFgP" class="menuButtonMenuLink">Service Logistics</a><hr class="menuSeparator" /><a href="https://appexchange.salesforce.com" class="menuButtonMenuLink" target="_blank">AppExchange</a><a href="http://developer.force.com" class="menuButtonMenuLink" target="_blank">Developer Community</a><a href="https://success.salesforce.com" class="menuButtonMenuLink" target="_blank">Success Community</a></div><div class="tsidMenu-br mbrMenu-br mbrMenu-rc"></div><div class="tsidMenu-bc mbrMenu-bc"></div><div class="tsidMenu-bl mbrMenu-bl mbrMenu-rc"></div></div></div><script>new MenuButtonRounded('tsid', false,16);</script></div></div></td></tr>
+</table><div class="zen"><div class="brdPalette zen-headerBottom zen-hasTabOrganizer" id="tabContainer" role="navigation"><h1 class="zen-assistiveText">Tab Navigation</h1><nav><ul class="zen-inlineList zen-tabMenu" id="tabBar"><li class="zen-firstItem" id="home_Tab"><a href="/home/home.jsp" title="Home Tab">Home</a></li><li id="Chatter_Tab"><a href="/_ui/core/chatter/ui/ChatterPage" title="Chatter Tab">Chatter</a></li><li id="Account_Tab"><a href="/001/o" title="Accounts Tab">Accounts</a></li><li id="Contact_Tab"><a href="/003/o" title="Contacts Tab">Contacts</a></li><li id="Case_Tab"><a href="/500/o" title="Cases Tab">Cases</a></li><li id="WorkOrder_Tab"><a href="/0WO/o" title="Work Orders Tab">Work Orders</a></li><li class="wt-Analysis_Task" id="01ro0000000xN8f_Tab"><a href="/a3c/o" title="Analysis Tasks Tab">Analysis Tasks</a></li><li class="wt-Hi_Track_Error" id="01ro0000000xN8w_Tab"><a href="/a4C/o" title="Hi-Track Errors Tab">Hi-Track Errors</a></li><li id="Order_Tab"><a href="/801/o" title="Orders Tab">Orders</a></li><li id="Product2_Tab"><a href="/01t/o" title="Products Tab">Products</a></li><li id="Entitlement_Tab"><a href="/550/o" title="Entitlements Tab">Entitlements</a></li><li class="wt-Favorite_Address" id="01ro0000000xN8r_Tab"><a href="/a48/o" title="Favorite Addresses Tab">Favorite Addresses</a></li><li id="report_Tab"><a href="/00O/o" title="Reports Tab">Reports</a></li><li class="zen-active brandPrimaryBgr primaryPalette" id="Dashboard_Tab"><a href="/01Z/o" class="brandPrimaryFgr" title="Dashboards Tab - Selected">Dashboards</a><span class="zen-assistiveText">(Currently Selected)</span></li><li class="wt-Wave-Analytics" id="01ro0000000xN9K_Tab"><a href="/servlet/servlet.Integration?lid=01ro0000000xN9K&amp;ic=1&amp;linkToken=VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQxTkRaYSxsTjBmVEMtR1dOcHVsSDZhcDlDNVJRLFlXWmtNR0po" title="Wave Analytics Tab">Wave Analytics</a></li><li id="AllTab_Tab"><a href="/home/showAllTabs.jsp">&nbsp;<img src="/img/s.gif" alt="All Tabs"  class="allTabsArrow" title="All Tabs"/>&nbsp;</a></li><li class="zen-moreTabs zen-notNeeded zen-lastItem" id="MoreTabs_Tab"><a href="javascript:void(0);" class="zen-assistiveLink" id="zen-moreTabsAssistiveLink" title="More Tabs Menu (Closed)"><b></b></a><ul id="MoreTabs_List"></ul>
+</li></ul>
+</nav></div></div><div id="s1Banner" class="zen s1Banner" style="background:url('/img/Salesforce_InAppBanner_bkgd.png')">
+    <a href="javascript:void(0);" onclick="Banner.prototype.clickS1LinkInBanner('https://itunes.apple.com/app/id404249815');" class="zen-img appStoreImage"></a>
+    <a href="javascript:void(0);" onclick="Banner.prototype.clickS1LinkInBanner('https://play.google.com/store/apps/details?id=com.salesforce.chatter');" class="zen-img googlePlayImage"></a>
+<a href="javascript:void(0);" title="Close" onclick="Banner.prototype.hideS1Banner();" class="zen-btn zen-closeBtn closeBtn">     X<span class="zen-assistiveText">Close</span>
+</a></div>
+</div><div class="bodyDiv brdPalette brandPrimaryBrd"><table class="outerNoSidebar" id="bodyTable" border="0" cellspacing="0" cellpadding="0"><tr><td class="noSidebarCell">
+<!-- Start page content table -->
+<a name="skiplink"><img src="/img/s.gif" height='1' width='1' alt="Content Starts Here" class="skiplink skipLinkTargetInner zen-skipLinkTarget" title="Content Starts Here"/></a><span id="thePage"></span><script>var umps_config = {"dateFormat":"M/d/yyyy","isMeetupsEnabled":"false","notificationsEnabled":false,"orgWideSearchEnabled":"true","locale":"en_US","umpsUrl":"https://umps1-c2-ord.salesforce.com","chat_options_help_url":"javascript:openPopupFocusEscapePounds('https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Floc%253Dhelp%2526target%253Dcollab_chat_options_dialog.htm%2526section%253DCollaboration%2526language%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&site=https%3A%2F%2Fhelp.salesforce.com', 'Help', 1024, 768, 'width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no', false, false);","orgId":"NA74$00Do0000000IJig","iosMessengerEnabled":"false","xoredSessionId":"wzOOn5imFquthI3FJn6s9M34rRD4JH0qYeIo43P19bCUPhZ/IZ63ig5Ta7xerAcfs1fIpIL6PVrxrEsbZm5ecpNXjKL7fdESmQ3s27Pg6/G3junXSJIUam3yxqDWOiORf6p37oIymeraVZexvosxFQ==","userLanguage":"en_US","isScreenShareEnabled":"false","dateTimeFormat":"M/d/yyyy h:mm a","isGroupChatEnabled":"false","chatMsgDeepHistoryEnabled":"false","chatMsgDeepHistoryDarkLaunch":"false","sfdcVersion":210.0,"chat_using_help_url":"javascript:openPopupFocusEscapePounds('https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Floc%253Dhelp%2526target%253Dcollab_chat_using.htm%2526section%253DCollaboration%2526language%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&site=https%3A%2F%2Fhelp.salesforce.com', 'Help', 1024, 768, 'width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no', false, false);","umpsWidgetPath":"UMPSWidget_184","chatterDesktopEnabled":"true","localeStyle":"0","isChatUiEnabled":"true","chatterUserType":"s","userId":"0051J000004u6y8","randomMask":"8wPK8KiWJpudtL2MbBfL1YypylGpYRFvLIpkq0G2mIGmaW4YcPXV/1EFM9Ioy0ko0RCE5+OIXjKZ+xh2EzgWKMoDxvCJG5xZ4VSI6cmXoIXYxJPmKugiXgKtj8+jS2DlM/4Eq8lm6K6vFM/j9NJSVA==","timeFormat":"h:mm a","contentDomain":"https://hdscorp--c.na74.content.force.com","isAudioVideoEnabled":"false","baseSfdcUrl":"https://hdscorp.my.salesforce.com","maxParticipantsInAdhocChat":"10","chatMsgHistoryEnabled":"true"};</script><script>(function(){"use strict";var a=function(){setTimeout(function(){if(window.self==window.top){var e=document.createElement("IFRAME");e.setAttribute("id","chat_widget_frame");e.setAttribute("title","iframe_js");e.setAttribute("name","iframe_js");e.setAttribute("src","https://umps1-c2-ord.salesforce.com/umps/UMPSWidget_184/_js.html?cflag=210.17.2&parentUrl=https://hdscorp.my.salesforce.com");e.setAttribute("style","display:none;frameborder:0");document.getElementsByTagName("head")[0].appendChild(e)}},1);};window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)}());</script><span id="thePage:j_id0"></span><span id="thePage:j_id1"></span>
+        <link href="/sCSS/41.0/sprites/1512509900000/Theme3/default/gc/AnalyticsCommon.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        function onLoadSelector() { /* CustomReportSelector.java injects a call to nonexistent onLoadSelector see Bug W-1599971 */ }
+     </script>
+
+    <div class="bPageTitle dashBackLink"><div class="ptBreadcrumb">&#171;&#160;<a href="/01Z?fcf=00l1J000001q7Bs" shouldstayinownframe="true">Go to Dashboard List</a>
+    </div></div><div class="bPageTitle"><div class="ptBody secondaryPalette brandSecondaryBrd"><div class="content"><img src="/img/s.gif" class="pageTitleIcon" title="Dashboards" alt="Dashboards" /><h1 class="pageType noSecondHeader">Canada Dashboard Q3</h1><div class="blank"></div></div><div class="links"><a href="javascript:openPopupFocusEscapePounds('https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Floc%253Dhelp%2526target%253Drd_dashboards_run_read.htm%2526section%253DDashboards%2526language%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&site=https%3A%2F%2Fhelp.salesforce.com', 'Help', 1024, 768, 'width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no', false, false);" title="Help for this Page (New Window)"><span class="helpLink">Help for this Page</span><img src="/img/s.gif" alt="" class="helpIcon" title="" /></a></div></div></div><span id="thePage:j_id23:j_id24:j_id25"></span><span class="bPageTitle"><script src="/jslibrary/1510796066000/sfdc/Chatter.js"></script><script src="/jslibrary/1510689194000/sfdc/ChatterDefer.js"></script><script src="/jslibrary/1510689194000/sfdc/Zen.js"></script><div class="metadata" id="section_header"><div class="feedLinks zen" id="feedLinks"><ul class="zen-inlineList"><li><div class="chatterShowHideFeed"><script>chatter.getToolbox().setToken('VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQxTlRkYSxWQ1E4MWhCbVUyeE1ub0F6ZFg4WllrLE1XTm1NVEJr');</script><span class="hideFeedLink" id="hideFeedLink"><a href="javascript:%20void%280%29%3B" class="innerLink" onclick="chatter.getFeed().toggle(&#39;{&quot;subjectId&quot;:&quot;01Z1J000001Ifa2&quot;,&quot;feedType&quot;:&quot;ENTITY&quot;,&quot;writable&quot;:&quot;ReadWrite&quot;,&quot;numFeedItems&quot;:20,&quot;canSortFeed&quot;:true,&quot;sortByComments&quot;:true,&quot;showFeedTitle&quot;:false,&quot;isDropDownFiltersVisible&quot;:true,&quot;alwaysShowFullText&quot;:false,&quot;isShowMoreOfThis&quot;:false,&quot;isCompactFeed&quot;:false,&quot;isSingleFeedItemMode&quot;:false,&quot;feedfilter&quot;:&quot;all&quot;,&quot;keyprefix&quot;:&quot;&quot;}&#39;, false);"><img src="/img/s.gif" alt="Hide Feed" title="Hide Feed" /><span  class="linkText">Hide Feed</span></a></span><span class="showFeedLink" id="showFeedLink" style="display:none"><a href="javascript:%20void%280%29%3B" class="innerLink" onclick="chatter.getFeed().toggle(&#39;{&quot;subjectId&quot;:&quot;01Z1J000001Ifa2&quot;,&quot;feedType&quot;:&quot;ENTITY&quot;,&quot;writable&quot;:&quot;ReadWrite&quot;,&quot;numFeedItems&quot;:20,&quot;canSortFeed&quot;:true,&quot;sortByComments&quot;:true,&quot;showFeedTitle&quot;:false,&quot;isDropDownFiltersVisible&quot;:true,&quot;alwaysShowFullText&quot;:false,&quot;isShowMoreOfThis&quot;:false,&quot;isCompactFeed&quot;:false,&quot;isSingleFeedItemMode&quot;:false,&quot;feedfilter&quot;:&quot;all&quot;,&quot;keyprefix&quot;:&quot;&quot;}&#39;, false);"><img src="/img/s.gif" alt="Show Feed" title="Show Feed" /><span  class="linkText">Show Feed</span></a></span></div></li></ul>
+</div><div class="clearingBox"></div></div><div class="chatterfeedshell" id="chatterfeedshell"><div class="chatterexpando" id="chatterexpando"><div class="feedpage zen"><div class="feedmainandrightbar"><div class="feedrightbar"><div class="zen"><div class="zen-pts" data-chatter-widget="subscribeBtn" data-sfdc-entity-id="01Z1J000001Ifa2" data-sfdc-network-id="000000000000000" onclick="SfdcApp.Chatter.SubscribeButton.onClick(event);"><span class="zen-media zen-mediaExt" data-chatter-subscribe="1"><a href="javascript:void(0);" class="zen-img zen-mrs"><img src="/img/s.gif" alt="Follow this dashboard to receive updates in your feed." width="1" height="1" class="chatter-followIcon chatter-icon" title="Follow this dashboard to receive updates in your feed." /></a><span class="zen-mediaBody"><a href="javascript:void(0);" title="Follow this dashboard to receive updates in your feed.">Follow</a></span></span><span class="zen-media zen-mediaExt" onblur="SfdcApp.Chatter.SubscribeButton.onHover(event, false)" onfocus="SfdcApp.Chatter.SubscribeButton.onHover(event, true)" onmouseout="SfdcApp.Chatter.SubscribeButton.onHover(event, false)" onmouseover="SfdcApp.Chatter.SubscribeButton.onHover(event, true)" style="display:none"><img src="/img/s.gif" alt="Stop following this dashboard to stop receiving updates in your feed." width="1" height="1" class="zen-mrs zen-img chatter-checkedIcon chatter-icon" title="Stop following this dashboard to stop receiving updates in your feed." /><span class="zen-mediaBody">Following<a href="javascript:void(0);" class="zen-imgExt zen-mls" data-chatter-subscribe="0" title="Stop following this dashboard to stop receiving updates in your feed."><img src="/img/s.gif" alt="Stop following this dashboard to stop receiving updates in your feed." width="1" height="1" class="chatter-icon chatter-unfollowIcon" title="Stop following this dashboard to stop receiving updates in your feed." /></a></span></span></div></div><div class="followers 01Z1J000001Ifa2 thumbnailPanel profileSection" id="followerPanel" data-hovdata="dir=chatterHover-left">
+	<div class="vfButtonBar">
+			<div>
+
+
+
+<a href="javascript:void(0);" onclick="if(!window.followerDialog) { window.followerDialog = chatter.createModalOverlay({id:'followerDialog',height:'420',title:'Followers',url:'/user/01Z1J000001Ifa2/followers',params:{},onClose:function onClose() { SfdcApp.Chatter.FollowListOverlay.closeDialog('01Z1J000001Ifa2'); }});  window.followerDialog.register(); window.followerDialog.addEvents(); }  window.followerDialog.open();" class="dialog_followerDialog"><span  id="moreFollowersLink">Show All (7)</span></a>
+
+			</div>
+		<div>
+			<h3>Followers</h3>
+		</div>
+	</div>
+	<div>
+			<table class="thumbnailTable">
+	                <tr>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BYqp" title="Barbara Taggart"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BYqp" title="Barbara Taggart"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000saMQ/T" alt="Barbara Taggart" width="30" height="30" class="chatter-photo" title="Barbara Taggart" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BZCG" title="Michael Behrens"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BZCG" title="Michael Behrens"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000sanw/T" alt="Michael Behrens" width="30" height="30" class="chatter-photo" title="Michael Behrens" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BZ8G" title="Thomas Maruri"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BZ8G" title="Thomas Maruri"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/005/T" alt="Thomas Maruri" width="30" height="30" class="chatter-photo" title="Thomas Maruri" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BZkE" title="Dan Sprouse"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BZkE" title="Dan Sprouse"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000saQh/T" alt="Dan Sprouse" width="30" height="30" class="chatter-photo" title="Dan Sprouse" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                </tr>
+	                <tr>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BxBg" title="Shelley Simone"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BxBg" title="Shelley Simone"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/005/T" alt="Shelley Simone" width="30" height="30" class="chatter-photo" title="Shelley Simone" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BZfD" title="Mike White"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BZfD" title="Mike White"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000sbUV/T" alt="Mike White" width="30" height="30" class="chatter-photo" title="Mike White" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                		<td>
+	                		    <a href="/_ui/core/userprofile/UserProfilePage?u=005o0000004BZRo" title="Grant Broadley"><span class="chatter-avatarMedium chatter-avatar" data-hovid="005o0000004BZRo" title="Grant Broadley"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000sala/T" alt="Grant Broadley" width="30" height="30" class="chatter-photo" title="Grant Broadley" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>
+	                    	</td>
+	                </tr>
+            </table>
+	</div>
+
+</div>
+<script type="text/javascript">chatter.getFollowersPanel().wire('01Z1J000001Ifa2');</script>
+</div><div class="feedmain"><script>chatter.getToolbox().setToken('VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQyTmpaYSw5Qkd0X1k4M295eDh5dU1XWkhScDdjLE1XTm1NVEJr');</script><div class="publishercontainer zen  defaultState  cxchattertextareacontainer chattertextareacontainer" data-publisher="{&quot;subjectId&quot;:&quot;01Z1J000001Ifa2&quot;,&quot;entityType&quot;:&quot;Dashboard&quot;,&quot;useDefaultState&quot;:true,&quot;useEnhancedKeyboardNavigation&quot;:true}" data-topics="">
+    <ul class="publisherFeedItemTypeChoices">
+
+    <li class="publisherFeedItemTypeChoice" label="TextPost">
+        <a href="javascript:void(0);" title="Post" class="publisherattach publisherattachTextPost   " id="publisherAttachTextPost" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'TextPost', 'TextPost', event);">
+            <img src="/s.gif" alt="" class="publishericon " title="">
+            <span class="publisherattachtext ">Post</span>
+            <span class="pArrow"></span>
+        </a>
+    </li>
+    <li class="publisherFeedItemTypeChoice" label="ContentPost">
+        <a href="javascript:void(0);" title="File" class="publisherattach publisherattachContentPost   " id="publisherAttachContentPost" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'ContentPost', 'ContentPost', event);">
+            <img src="/s.gif" alt="" class="publishericon " title="">
+            <span class="publisherattachtext ">File</span>
+            <span class="pArrow"></span>
+        </a>
+    </li>
+    <li class="publisherFeedItemTypeChoice" label="ContentNote">
+        <a href="javascript:void(0);" title="New Note" class="publisherattach publisherattachContentNote   " id="publisherAttachContentNote" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'ContentNote', 'ContentNote', event);">
+            <img src="/s.gif" alt="" class="publishericon " title="">
+            <span class="publisherattachtext ">New Note</span>
+            <span class="pArrow"></span>
+        </a>
+    </li>
+            <li class="publisherFeedItemTypeChoice">
+<div class="zen-select publisherattach publisherTypeOverflow" data-sfdc-widget="SfdcCmp.Ui.Dropdown" role="application"
+>
+  <a id="publisherDropdown" class="zen-trigger" href="javascript:void(0);" title="Click to see more options" aria-haspopup="true">
+    <span class="triggerText">More</span>
+    <span class="publisherTypeOverflowSelected hidden">
+        <span class="publisherattachtext truncateLabel"></span>
+    </span>
+    <span class="publisherArrowContainer">
+        <b class="zen-selectArrow"></b>
+    </span>
+  </a>
+  <span class="pArrow"></span>
+  <ul class="zen-options" role="menu" aria-labelledby="publisherDropdown">
+<li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript:void(0);" class="eventMru publisherFeedItemTypeChoice publisherattach truncateLabelWrapper publisherattach09Do0000000caJ5" id="publisherAttach09Do0000000caJ5" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'CreateRecordEvent', '09Do0000000caJ5', event);" role="menuitem" title="Event"><span><img src="/img/icon/calendar16.png" alt="" class="publishericon mruIcon applygrayscale" title="" /><span class="publisherattachtext truncateLabel">Event</span></span></a></li><li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript:void(0);" class="publisherFeedItemTypeChoice publisherattach publisherattachLinkPost" id="publisherAttachLinkPost" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'LinkPost', 'LinkPost', event);" role="menuitem" title="Link"><span><img src="/img/s.gif" alt="" class="publishericon" title="" /><span class="publisherattachtext">Link</span></span></a></li><li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript:void(0);" class="publisherFeedItemTypeChoice publisherattach publisherattachPollPost" id="publisherAttachPollPost" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'PollPost', 'PollPost', event);" role="menuitem" title="Poll"><span><img src="/img/s.gif" alt="" class="publishericon" title="" /><span class="publisherattachtext">Poll</span></span></a></li><li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript:void(0);" class="publisherattachRypplePost publisherFeedItemTypeChoice publisherattach" id="publisherAttachRypplePost" onclick="chatter.getPublisher().openTypeSpecificPanel(this, 'RypplePost', 'RypplePost', event);" role="menuitem" title="Thanks"><span><img src="/img/s.gif" alt="" class="publishericon" title="" /><span class="publisherattachtext">Thanks</span></span></a></li>  </ul>
+</div>
+            </li>
+    </ul>
+    <div class="publisherWrapper">
+    <div class="publisherTextAreaContainer hideElement" id="publisherTextArea">
+        <div class="publisherTextAreaInner">
+            <textarea class="chatterTopicsEnabled  groupAtMentionsEnabled publishertextarea" id="publishereditablearea" name="publishereditablearea" role="textbox" tabindex="0" title="Write something..." type="text" wrap="soft">Write something...</textarea>
+            <input type="hidden" id="publisherprompttext" name="publisherprompttext" value="Write something...">
+        </div>
+
+        	<div id="richTextEditorContainer">
+        		<div id="publisherRichTextEditor"></div>
+        		<input type="text" id="richTextPlaceholderInput" tabindex="-1" />
+        	</div>
+        <div id="publishererrorcontainer" class="cxchattermessagecontainer chattermessagecontainer" style="display:none;"></div>
+    </div>
+    <div class="bottomBar hideElement" id="publisherBottomBar">
+        <div class="bottomBarRight">
+            <span class="publisherShareButtonPlaceholder">    <input id="publishersharebutton" value="Share" class="zen-btn zen-highlightBtn" name="publishersharebutton" onclick="chatter.getPublisher().submit();" title="Share" type="button">
+</span>
+        </div>
+        <div class="bottomBarLeft">
+            <span class="publisherPostToElementPlaceholder">    <span id="publisherPostToElement"><span class="postTo"><span class="postToTarget"><span class="postToDropdown internalExternalDropdown"><div class="zen-select " data-sfdc-widget="SfdcCmp.Ui.Dropdown" role="application"
+
+		data-expandMode="click"
+        data-isSelect="true"
+
+    	data-autoFocus="true"
+
+>
+
+
+	  <a id="" class="zen-trigger " href="javascript:void(0);" onclick="" title="Hitachi Data Systems Only" aria-haspopup="true">
+		    <b class="zen-selectArrow"></b>
+Hitachi Data Systems Only	  </a>
+		<ul class="zen-options " role="menu" aria-labelledby="">
+<li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript:;" class="internalVisibility" onclick="chatter.getPublisher().getWidget(&#39;visibilityDropdownWidget&#39;).setFeedItemVisibility(&#39;INTERNAL_USERS&#39;);" role="menuitem" title="Hitachi Data Systems Only">Hitachi Data Systems Only</a></li><li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript:;" class="everyoneVisibility" onclick="chatter.getPublisher().getWidget(&#39;visibilityDropdownWidget&#39;).setFeedItemVisibility(&#39;ALL_USERS&#39;);" role="menuitem" title="Share with all who have access to the record">All with access</a></li>		</ul>
+</div>
+</span><script>chatter.getPublisher().addVisibilityDropdownWidget();</script></span></span></span>
+</span>
+            <span class="publisherVisibilityWidgetPlaceholder">    <span id="publisherVisibilityWidget" class="visibilityWidgetParent">
+        <a href="javascript:void(0);" class="iconParent" onclick="chatter.getPublisher().getWidget('visibilityWidget').toggleDisplay();">
+            <img src="/s.gif" alt="Who can see your posts?" class="visibilityicon " id="publisherVisibilityIcon" title="Who can see your posts?">
+        </a>
+        <script>chatter.getPublisher().addVisibilityWidget("javascript:openPopupFocusEscapePounds('https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Floc%253Dhelp%2526target%253Dcollab_post_visibility.htm%2526language%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&site=https%3A%2F%2Fhelp.salesforce.com', 'Help', 1024, 768, 'width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no', false, false);", false, false, false, true);</script>
+    </span>
+</span>
+        </div>
+    </div>
+            <div class="TextPost publisherTemplate activeTemplate" lazyInit="true">
+            	<!--<div class="publisherTextAreaPlaceholder alignTop"></div><div class="publisherBottomBarPlaceholder"></div>-->
+            </div>
+            <div class="ContentPost publisherTemplate " lazyInit="true">
+            	<!--<div class="contentPublisherSlideDown customPanel alignTop"><div class="panel hidden" id="chatterFileStageOne"><div class="panelBody clear"><table  class="chatterPublisherActionsContainer" cellpadding="0" cellspacing="0"><tr><td class="chatterPublisherFileActionContainerLeft"><a href="javascript:" id="chatterLinkFileAction" onclick="chatter.getPublisher().getHandler('ContentPost').setMyFilesFilterFlag(true);chatter.getPublisher().getHandler('ContentPost').showLinkFile(this);" title="Select a file from Salesforce">Select a file from Salesforce</a></td><td id="chatterUploadFileActionPanel"><a href="javascript:" id="chatterUploadFileAction" onclick="chatter.getPublisher().getHandler('ContentPost').showFileInfo(this, null, false);" title="Upload a file from your computer">Upload a file from your computer</a><input  class="file hidden" id="hiddenFileBtn" name="hiddenFileBtn" onchange="chatter.getPublisher().getHandler('ContentPost').fileNewInfoUpdate(this);" size="20" type="file" /></td></tr>
+</table></div></div><div class="panel hidden" id="chatterFileStageTwo"><div class="clearContentPanelButtonContainer"><a href="javascript: void(0);" class="clearContentPanelButton" onclick="chatter.getPublisher().getHandler('ContentPost').clearPanelState();" title="Close the publisher">&nbsp;</a></div><div class="panelBody clear"><form action="" id="chatterFileForm" method="POST" name="chatterFileForm"><div class="requiredLegendContainer" id="requiredLegend"><span class="requiredLegend"><span class="requiredExampleOuter"><span class="requiredExample">&nbsp;</span></span><span class="requiredMark">*</span><span  class="requiredText"> = Required Information</span></span>&nbsp;</div><table  class="postInput" border="0" cellpadding="0" cellspacing="0"><tr class="chatterFileRowChrome" id="chatterFileRow"><td colspan="2"><label for="chatterFile" style="display:none;">&nbsp;</label><div><div class="requiredInput"><div class="requiredBlock"></div><input  class="file" id="chatterFile" name="chatterFile" onchange="chatter.getPublisher().getHandler('ContentPost').fileInfoUpdate(this);" size="24" title="Select a File" type="file" /><div class="errorMsg hidden"></div></div><div class="uploadFileSizeLimit"><span  class="fileSize">Maximum file size is 2&nbsp;GB</span></div></div></td></tr>
+<tr class="hidden" id="fileNameRow"><TH scope="row"><label for="fileName"><span class="assistiveText">*</span>Name</label></TH><td><div class="requiredInput"><div class="requiredBlock"></div><input  class="fileFormInputElement" id="fileName" maxlength="260" name="fileName" size="20" title="Name" type="text" value="" /><div class="errorMsg hidden"></div></div></td></tr>
+<tr id="descRow"><TH scope="row"><label for="desc">Description</label></TH><td><div><textarea  class="fileFormInputElement" cols="60" id="desc" maxlength="1005" name="desc" rows="4" title="Description" type="text" wrap="soft"></textarea><div class="errorMsg hidden"></div></div></td></tr>
+</table><input type="hidden"  id="hiddenFileName" name="hiddenFileName" value="" /><div class="hidden sharedWithOptionPanel" id="sharedWithOptionPanel"><label>What do you want to do with this file?</label><ul><li class="sharedWithStatusBar"><a href="javascript:void(0);" class="lockItemIcon" id="shareOptionStatus" onclick="Sfdc.AccessibleUploadFileDialog.showShareOptionDropdown(this, {pubLinkEnabled:true, groupsAvailable:true });return false;"><span>Upload privately</span><img src="/img/s.gif" alt="" width="1" height="1" class="tinyDownArrowIcon" title="" /></a></li></ul>
+</div><input type="hidden"  id="shareOption" name="shareOption" value="pvt" /></form></div></div><div class="panel hidden" id="chatterFileNewStageTwo"><div class="clearContentPanelButtonContainer"><a href="javascript: void(0);" class="clearContentPanelButton" onclick="chatter.getPublisher().getHandler('ContentPost').clearPanelState();" title="Close the publisher">&nbsp;</a></div><div class="panelBody clear"><div id="chatterSelectedFileInfo"><div class="selectedFileDetailsContainer"><div class="imgBlock fileType32x32Icon"><img src="/img/s.gif" alt="" width="32" height="32" id="chatterSelectedFileTypeIcon" title="" /></div><div class="fileDetails"><div class="title"><span  id="chatterSelectedFileName"></span>&nbsp;<span  class="size" id="chatterSelectedFileSize"></span></div></div></div></div></div></div><div class="panel hidden" id="chatterFileContent"><div class="clearContentPanelButtonContainer"><a href="javascript: void(0);" class="clearContentPanelButton" onclick="chatter.getPublisher().getHandler('ContentPost').clearPanelState();" title="Close the publisher">&nbsp;</a></div><div class="panelBody clear"><div id="chatterExistContentInfo"></div></div></div></div><div class="publisherTextAreaPlaceholder alignCenter"></div><div class="publisherBottomBarPlaceholder"></div>-->
+            </div>
+            <div class="ContentNote publisherTemplate " lazyInit="">
+            	<div class="customPanel alignTop">
+    <div class="noteTitleContainer">
+        <input title="Title" type="text" class="noteTitleInput" placeholder="Untitled Note" maxlength="200" />
+        <div class="errorMsg hidden"></div>
+    </div>
+    <div class="noteBodyContainer">
+        <div id="editor"></div>
+    </div>
+</div>
+<div class="publisherBottomBarPlaceholder"></div>
+
+            </div>
+            <div class="09Do0000000caJ5 publisherTemplate " lazyInit="">
+            	<div class="customPanel alignTop"><div class="quickActionPanel"><div class="panelBody clear" id="panelBody09Do0000000caJ5"><script type="text/javascript">
+function updateOpener(addnl, mode) {
+	document.editPage__09Do0000000caJ5.hdnaddn.value = addnl;
+	document.editPage__09Do0000000caJ5.hdnrefr.value = mode;
+	document.editPage__09Do0000000caJ5.submit();
+}
+function removeInvitee(id) {
+updateOpener(id,'1', []);}
+function ivwh(elemId, otherElemId) {
+var id = document.getElementById(elemId).value;if(otherElemId != null && (id == '' || id =='000000000000000')) {id = document.getElementById(otherElemId).value;}if (id != null && id != '' && id !='000000000000000') {updateOpener(id,'0', []);
+}
+};</script><script src="/static/111213/js/picklist4.js"></script><script src="/servlet/servlet.picklist?e=Event&h=47DEQpj8HBSa%2B%2FTImW%2B5JCeuQeRkm5NMpJWZG3hSuFU%3D&v=-1&layout=0EHo0000000ZbEt&mo=EDITLOAD&esc=HTML&l=en_US&pr=1.29&t=0"></script><div class="stub" id="editPage__09Do0000000caJ5"></div><script>createRecordHandler.registerFeedItemTypeHandler('09Do0000000caJ5', 'editPage__09Do0000000caJ5', 'Create', '09Do0000000caJ5', null, 'Event', '01Z1J000001Ifa2');</script></div></div></div><div class="bottomBar"><div class="bottomBarRight"><span class="publisherShareButtonPlaceholder"></span></div></div>
+            </div>
+            <div class="LinkPost publisherTemplate " lazyInit="true">
+            	<!--<div class="contentPublisherSlideDown customPanel alignTop"><div class="panel"><div class="panelBody clear"><table  class="postInput"><tr><TH scope="row"><label for="url"><span class="assistiveText">*</span>Link URL</label></TH><td><div class="requiredInput"><div class="requiredBlock"></div><input  class="fileFormInputElement" id="url" maxlength="1005" name="url" size="20" title="Link URL" type="text" value="http://" /><div class="errorMsg hidden"></div></div></td></tr>
+<tr><TH scope="row"><label for="urlName">Link Name</label></TH><td><div class="urlName"><input  class="fileFormInputElement" id="urlName" maxlength="260" name="urlName" size="20" title="Link" type="text" value="" /><div class="errorMsg hidden"></div></div></td></tr>
+</table></div></div></div><div class="publisherTextAreaPlaceholder alignCenter"></div><div class="publisherBottomBarPlaceholder"></div>-->
+            </div>
+            <div class="PollPost publisherTemplate " lazyInit="true">
+            	<!--<div class="publisherTextAreaPlaceholder alignTop"></div>
+<div class="customPanel alignCenter">
+	<div class="publisherpollchoices">
+					<div class="publisherpollchoice">
+					<label class="publisherpollchoicelabel" for="choiceinput1">Choice 1</label>
+					<input id="choiceinput1" title="Choice 1" type="text" class="publisherpollchoiceinput" />
+					<div class="errorMsg hidden"></div>
+			</div>
+			<div class="publisherpollchoice">
+					<label class="publisherpollchoicelabel" for="choiceinput2">Choice 2</label>
+					<input id="choiceinput2" title="Choice 2" type="text" class="publisherpollchoiceinput" />
+					<div class="errorMsg hidden"></div>
+			</div>
+	</div>
+	<div class="publisherpolladdchoice">
+<a href="javascript: void(0);" title="Add more choices" onclick="chatter.getPublisher().getHandler('PollPost').addPollChoiceInputElement(this);" id="polladdchoice">			Add more choices
+</a>	</div>
+</div>
+<div class="publisherBottomBarPlaceholder"></div>-->
+            </div>
+            <div class="RypplePost publisherTemplate " lazyInit="">
+            	<div class="customPanel alignTop" id="showingrypplethanks">
+    <div class="publisherThanksContainer">
+        <div>
+            <div class="thanksInput" title="Search for badges..." id="thanksRecipientContainer">
+                <div id="thanksRecipient">
+                    <span><input type="text" id="thanksRecipientInputBox" size="25"/></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thanksContainer">
+        <div class="badgeContainer">
+             <div class="badgeInfo" id="badgeInfo" data-name="Thanks" data-externalId="0W1o0000000VqGnCAK" data-description="Thank you for going above and beyond to contribute to our success!"
+            data-url="https://hdscorp.my.salesforce.com/img/rypple/Thanks.png">
+                <a href="javascript:chatter.getPublisher%28%29.getHandler%28%27RypplePost%27%29.showRyppleDialog%28%29"><img src="/img/s.gif" alt="Thank you for going above and beyond to contribute to our success!" class="publisherBadge" title="Thank you for going above and beyond to contribute to our success!" /></a>
+            </div>
+            <div class="changeBadge">
+                <a href="javascript:chatter.getPublisher%28%29.getHandler%28%27RypplePost%27%29.showRyppleDialog%28%29">Change Badge</a>
+            </div>
+        </div>
+        <div class="publisherTextAreaPlaceholder alignTop"></div>
+        <div class="clearingBox"></div>
+    </div>
+</div>
+<div class="publisherBottomBarPlaceholder"></div>
+
+<div class="badgeSelectorDialogContents hidden">
+    <div class="ryppleBadgeList">
+        <div class="workBadgeSearch badgeListSearchContainer" title="Search for badges...">
+            <div class="badgeListSearch">
+                <span class="badgeListSearchSpan">
+                    <input class="badgeListSearchInputElement fileFormInputElement ghostText" id="badgeListSearchInputElement"
+                        name="badgeListSearchInputElement" maxlength="30" size="30" type="text" value="Search for badges..." />
+                </span>
+            </div>
+        </div>
+        <div class="allBadgesList"></div>
+        <div class="badgeSearchResultsMessage hidden"></div>
+        <div class="searchResultsBadgesList hidden"></div>
+    </div>
+
+    <div class="ryppleBadgeDetail hidden">
+        <div class="ryppleBadgeDetailContainer">
+            <div class="badgeLeft">
+                <div class="confirmBadge">
+                    <img class="badgeLargeImage" src="/s.gif"/>
+                </div>
+            </div>
+            <div class="rightBadge">
+                <div class="rightContent">
+                    <div class="badgeSection">
+                        <span class="sectionHead">Badge Title</span><br/>
+                        <span class="badgeTitle"></span>
+                    </div>
+                    <div class="section">
+                        <span class="sectionHead">What This Badge Means</span><br/>
+                        <span class="badgeSelectionDescription paraText"></span>
+                    </div>
+                    <div class="badgeLimitsSection section hidden">
+                        <span class="sectionHead">Badges Left To Give</span><br/>
+                        <span class="limitRemaining paraText"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="zen badgeButtonsContainer">
+                <button class="badgeSelectButton cancelButton linkStyle"
+                        onClick="javascript:chatter.getPublisher().getHandler('RypplePost').displayBadgeList()">
+                    Go Back
+                </button>
+                <button class="zen-btn zen-highlightBtn badgeSelectButton confirmButton"
+                        onClick="javascript:chatter.getPublisher().getHandler('RypplePost').updateSelectedBadge()">
+                    Use This Badge
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+    </div>
+    <div class="externalGroupWarning">Sharing with customers</div>
+    <div class="clear"></div>
+    <script>Sfdc.Dom.onReady(function(){chatter.getPublisher().wire('TextPost','TextPost');});</script>
+</div>
+
+
+
+<script>chatter.getToolbox().setToken('VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQyTmpsYSx4ZUdFdWVKZFNYVnZ5eXRZQnkwYVJBLE1XTm1NVEJr');</script>    <div class="cxfeedinnerwrapper " id="feedwrapper">
+        <div class="feedcontainer cxfeedcontainer zen actionsOnHoverEnabled" data-feed="{&quot;subjectId&quot;:&quot;01Z1J000001Ifa2&quot;,&quot;feedType&quot;:&quot;ENTITY&quot;,&quot;writable&quot;:&quot;ReadWrite&quot;,&quot;numFeedItems&quot;:20,&quot;canSortFeed&quot;:true,&quot;sortByComments&quot;:true,&quot;showFeedTitle&quot;:false,&quot;isDropDownFiltersVisible&quot;:true,&quot;alwaysShowFullText&quot;:false,&quot;isShowMoreOfThis&quot;:false,&quot;isCompactFeed&quot;:false,&quot;isSingleFeedItemMode&quot;:false,&quot;feedfilter&quot;:&quot;all&quot;,&quot;keyprefix&quot;:&quot;&quot;}">
+
+
+<span class="feedDropDown"><div class="comboMenu zen-line feedsupermenu " data-sfdc-widget="SfdcCmp.chatter.ComboMenu">
+
+		<div class="zen-searchBox comboSearchMax feedSearch" data-sfdc-widget="SfdcCmp.Ui.SearchBox">
+	        <form class="feedSearchForm" onsubmit="chatter.getFeed().runSearch(event);">
+	         	<label for="searchInput" class="zen-assistiveText">Search this feed...</label>
+	            <input type="text" class="feedSearchTerm" id="searchInput" maxlength="100" placeholder="Search this feed&hellip;" aria-expanded="false" aria-haspopup="true" title="Search this feed..." alt="Search this feed..."/>
+	            <a class="zen-clearInput" href="#" onclick="chatter.getFeed().clearSearch()" title="Clear search"></a>
+	            <a href="javascript:void(0);" onclick="chatter.getFeed().clearSearch()" title="Clear search" class="feedSearchClear">
+	               <img src="/s.gif" class="feedSearchClearIcon" alt="Clear search">
+	            </a>
+	        </form>
+	        <div class="feedSearchClosedButton">
+	            <a href="javascript:void(0);" onclick="chatter.getFeed().expandSearchAndHideMenu()" title="Search this feed...">
+	                <img src="/s.gif" class="feedSearchIcon" alt="Search this feed...">
+	            </a>
+	       </div>
+		</div>
+		<div class="zen-smlineSep">|</div>
+
+<div class="zen-select " data-sfdc-widget="SfdcCmp.Ui.Dropdown" role="application"
+
+		data-expandMode="click"
+
+    	data-autoFocus="true"
+
+        data-autocollapse="true"
+>
+
+
+	  <a id="feedFilterDropDownElement" class="zen-trigger " onclick="" href="javascript:void(0);" title="" aria-haspopup="true">
+<span class="triggerTitleText">Show<span id="filterDisplay">All Updates</span><b class='zen-selectArrow'></b></span>      </a>
+		<div class="zen-options " role="menu" aria-labelledby="feedFilterDropDownElement">
+<span class="facet facetheader "><h4>Show</h4></span><span class="zen-optgroup combomenu-filter" data-sfdc-widget="SfdcCmp.Ui.OptGroup" role="radiogroup"><ul class="feedfilters"><li class="zen-checked" data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><span class="zen-visualization"></span><a href="javascript:;" aria-checked="true" data-value="All Updates" keyprefix="" onclick="chatter.getFeed().applyDropDownFilter({'requestType':'filter','filterType':'all','keyprefix':'','shouldPoll':false, 'label':'All Updates','itemVisibilityFilter':''});" role="menuitemradio" title="Show all posts, including auto-generated ones">All Updates</a></li><li data-sfdc-widget="SfdcCmp.Ui.Option"><span class="zen-visualization"></span><a href="javascript:;" data-value="Internal Only" keyprefix="" onclick="chatter.getFeed().applyDropDownFilter({'requestType':'filter','filterType':'feedItemVisibility','keyprefix':'','shouldPoll':false, 'label':'Internal Only','itemVisibilityFilter':'INTERNAL_USERS'});" role="menuitemradio" title="Show only internal posts">Internal Only</a></li><li data-sfdc-widget="SfdcCmp.Ui.Option"><span class="zen-visualization"></span><a href="javascript:;" data-value="Fewer Updates" keyprefix="" onclick="chatter.getFeed().applyDropDownFilter({'requestType':'filter','filterType':'userGeneratedContentFilter','keyprefix':'','shouldPoll':false, 'label':'Fewer Updates','itemVisibilityFilter':''});" role="menuitemradio" title="Hides auto-generated posts">Fewer Updates</a></li></ul>
+</span><span class="facet facetheader "><h4>Sort By</h4></span><span class="zen-optgroup combomenu-filter" data-sfdc-widget="SfdcCmp.Ui.OptGroup" role="radiogroup"><ul class="feedsortby"><li data-sfdc-widget="SfdcCmp.Ui.Option"><span class="zen-visualization"></span><a href="javascript:;" data-value="Latest Posts" onclick="chatter.getFeed().toggleSort(this, false, event);" role="menuitemradio" title="Latest Posts">Latest Posts</a></li><li class="zen-checked" data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><span class="zen-visualization"></span><a href="javascript:;" aria-checked="true" data-value="Most Recent Activity" onclick="chatter.getFeed().toggleSort(this, true, event);" role="menuitemradio" title="Most Recent Activity">Most Recent Activity</a></li></ul>
+</span>		</div>
+</div>
+
+</div>
+
+
+
+</span>
+            <div class="clearingBox"></div>
+
+            <div class="nonFeedSuccess zen-message zen-confirm" style="display:none">
+                <img src="/img/msg_icons/confirm24.png" class="leftImage"/>
+                <div class="nonFeedSuccessContent">
+                    <div class="nonFeedSuccessTitle">Success!</div>
+                    <div class="nonFeedSuccessMessage"></div>
+                </div>
+                <div class="clearingBox"></div>
+            </div>
+
+                <script type="text/javascript">
+                    chatter.getFeed().setCommentVisibilityHelpLink("javascript:openPopupFocusEscapePounds('https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Floc%253Dhelp%2526target%253Dcollab_mention_visibility.htm%2526language%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&site=https%3A%2F%2Fhelp.salesforce.com', 'Help', 1024, 768, 'width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no', false, false);");
+                </script>
+
+
+
+<div class="feeditemtextadditional" style="visibility:hidden;position:absolute;z-index=-100"></div><div class="feedcommenttext" style="visibility:hidden;position:absolute;z-index=-100"><div class="feeditemtextadditional" style="visibility:hidden;position:absolute;z-index=-100"></div></div><div id="0D51J00002p4vca" class="cxfeeditem feeditem    "
+    data-feeditem="{&quot;parentid&quot;:&quot;01Z1J000001Ifa2&quot;,&quot;parentname&quot;:&quot;Dashboard&quot;,&quot;parentActualName&quot;:&quot;Canada Dashboard Q3&quot;,&quot;feedItemType&quot;:&quot;TextPost&quot;,&quot;visibility&quot;:&quot;INTERNAL_USERS&quot;}" data-hovdata="dir=chatterHover-above"
+
+    onmouseover="Sfdc.Dom.addClass(this, 'cxhover');"
+    onmouseout="chatter.getToolbox().removeClassOnMouseOut(event, this, 'cxhover');">
+    <span class="">
+<a href="/005o0000004BZBl"><span class="chatter-avatarRegular feeditemusericon chatter-avatar" data-hovid="005o0000004BZBl" title="Rafal Raniszewski"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/005/T" alt="Rafal Raniszewski" width="45" height="45" class="chatter-photo" title="Rafal Raniszewski" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>    </span>
+    <div class="feeditemcontent cxfeeditemcontent">
+
+
+<div class="feeditembodyandfooter">
+    <div class="feeditembody">
+            <div class="preamblecontainer displayblock" >
+<span><span class="feeditemfirstentity"><a href="/005o0000004BZBl" class="actorentitylink" data-hovid="005o0000004BZBl">Rafal Raniszewski</a></span> to Hitachi Data Systems Only</span>             </div>
+<div class="cxfeeditemtextwrapper"><div class="cxfeeditemtextadditional feeditemtextadditional"><span class="feeditemtext cxfeeditemtext"><p>26800113</p></span></div><div class="fadeout hidden"></div><div class="cxmorecontainer"><span class="cxmorelink hidden"><a href="javascript: void(0);" onclick="chatter.getFeed().toggleFeed(this, true);">Show More</a><hr  class="sectionBreak"></span></div></div><div class="feeditemattachments cxfeeditemattachments"></div><div class="feeditemtopics"><div class="topics " id="topicContainer0D51J00002p4vca"  data-entityId="0D51J00002p4vca"
+    data-referrer="FEED_ITEM_TOPIC" data-isWidget="false"
+
+     >
+</div>
+</div>    </div>
+    <div class="feeditemfooter">
+        <span class="cxallfeedactions">
+<a href="javascript:void(0);" title="Comment on this post" onclick="chatter.getFeed().showCommentBoxViaAnchor(this, true);" class="feeditemactionlink cxaddcommentaction">Comment</a>    <span class="cxfeeditemcommentdot feeditemseparatingdot">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+
+
+<a href="javascript:void(0);" title="Like this post" onclick="chatter.getFeed().likeItem(this, '0D51J00002p4vca', 'TextPost');" style="" class="feeditemactionlink cxlikeitemaction">Like</a>
+<a href="javascript:void(0);" title="Stop liking this post" onclick="chatter.getFeed().unlikeItem(this, '0D51J00002p4vca');" style="display:none;" class="feeditemactionlink cxunlikeitemaction">Unlike</a>
+    <span class="cxfeeditemlikedot feeditemseparatingdot">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+
+
+
+
+            <span class="bookmarked" style="display:none;"><span class="zen-assistiveText">Feeditem is bookmarked</span></span>
+
+<span class="feeditemActionMenu"><div class="zen-select " data-sfdc-widget="SfdcCmp.Ui.Dropdown" role="application"
+
+		data-expandMode="click"
+
+    	data-autoFocus="false"
+
+>
+
+
+	  <a id="spillovermenu0D51J00002p4vca" class="zen-trigger feeditemActionMenuButton" href="javascript:void(0);" onclick="" title="More Actions" aria-haspopup="true">
+		    <b class=""></b>
+	  </a>
+		<ul class="zen-options " role="menu" aria-labelledby="spillovermenu0D51J00002p4vca">
+<li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript: void(0);" onclick="chatter.getFeed().bookmark(this, '0D51J00002p4vca');" role="menuitem" title="Bookmark this post">Bookmark</a></li><li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript: void(0);" onclick="SfdcApp.TopicsFeed.editFromMenu('0D51J00002p4vca')" role="menuitem" title="Add topics to this post">Add Topics</a></li>		</ul>
+</div>
+</span>        </span>
+        <a href="/0D51J00002p4vca" title="Click for single-item view of this post." class="feeditemtimestamp">December 15, 2017 at 5:58 AM</a>
+
+&nbsp;
+    </div>
+</div>
+
+        <script type="text/javascript">
+            chatter.getFeed().displayShowMoreAndFadeOut('0D51J00002p4vca');
+        </script>
+
+        <div class="feeditemextras cxchattertextareacontainer chattertextareacontainer">
+            <div class="cxcomments feeditemcomments" >
+                <div class="cxlikecontainer feedItemExtrasMetaText" >
+<div class="cxfeeditemlike feeditemlike " style="display:block">
+	<span class='like-icon'>&nbsp;</span><span><a href="/005o0000004BYrs">Rokas Pettersen</a> and <a href="/005o0000004BZBl">Rafal Raniszewski</a> like this.</span>
+</div>
+                </div>
+            </div>
+<div class="cxnewcomment newCommentContainer" style="display:none">
+    <div class="feeditemcomment feeditemnewcomment feeditemcommenttext">
+                    <div class="feeditemcommentphotocontainer">
+<a href="/0051J000004u6y8" class="feeditemcommentphoto">                    <img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000scDc/T"
+                         title="Chao Liu"
+                         alt="Chao Liu">
+</a>            </div>
+        <div class="feeditemcommentnew  zen">
+            <div class="newcommenttextwrapper">
+                <textarea  class="foobar cxnewcommenttext groupAtMentionsEnabled   chatterTopicsEnabled "
+                           tabindex="0"
+                           role="textbox"
+                           title="Write a comment..."></textarea>
+
+            </div>
+            <div class="cxvalidationmessage cxchattermessagecontainer chattermessagecontainer" style="display:none"></div>
+            <div class="feeditemvisibilitycontainer"></div>
+            	<input class="zen-btn cxnewcommentaction newcommentbutton cxchattersubmit" type="button" value="Comment"
+                	   title="Comment" onclick="chatter.getFeed().newComment(this, '0D51J00002p4vca', 'TextPost');"/>
+            <div>
+<a href="javascript:void(0);" onblur="chatter.getFeed().contentCommentActionBlur(this);" onfocus="chatter.getFeed().contentCommentActionFocus(this);" onclick="chatter.getFeed().createContentComment(this,'0D51J00002p4vca', false, true);" onmousedown="chatter.getFeed().contentCommentActionMouseDown(this);" class="cxcontentcommentaction">
+                    <img class="cxcontentcommentactionimg" src="/s.gif">
+                    <span class="cxcontentcommentactiontext">Attach File</span>
+</a>                </div>
+
+            <div class="cxcontentcommentinfo"></div>
+
+            <div class="feedclearfloat"></div>
+        </div>
+    </div>
+</div>
+<div style="display:none" class="feeditemcommentplaceholder cxcommentplaceholder">
+	<label>
+		<span>Click to comment</span>
+	    <input type="text" readonly="true" value="Write a comment..." class="cxcommentplaceholderaction" onclick="return chatter.getFeed().showCommentBoxViaPlaceholder(this);"
+	    onfocus="return chatter.getFeed().showCommentBoxViaPlaceholder(this, true);"
+	    onkeypress="return chatter.getFeed().showCommentBoxViaPlaceholderOnKeyPress(this, event);"
+	    />
+    </label>
+</div>        </div>
+    </div>
+</div>
+
+<div id="0D51J00002oP7xk" class="cxfeeditem feeditem    "
+    data-feeditem="{&quot;parentid&quot;:&quot;01Z1J000001Ifa2&quot;,&quot;parentname&quot;:&quot;Dashboard&quot;,&quot;parentActualName&quot;:&quot;Canada Dashboard Q3&quot;,&quot;feedItemType&quot;:&quot;TextPost&quot;,&quot;visibility&quot;:&quot;INTERNAL_USERS&quot;}" data-hovdata="dir=chatterHover-above"
+
+    onmouseover="Sfdc.Dom.addClass(this, 'cxhover');"
+    onmouseout="chatter.getToolbox().removeClassOnMouseOut(event, this, 'cxhover');">
+    <span class="">
+<a href="/005o0000004BYO5"><span class="chatter-avatarRegular feeditemusericon chatter-avatar" data-hovid="005o0000004BYO5" title="Mikael Nilsson"><img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000sbKQ/T" alt="Mikael Nilsson" width="45" height="45" class="chatter-photo" title="Mikael Nilsson" /><img src="/img/s.gif" alt="" class="chatter-avatarStyle" title="" /></span></a>    </span>
+    <div class="feeditemcontent cxfeeditemcontent">
+
+
+<div class="feeditembodyandfooter">
+    <div class="feeditembody">
+            <div class="preamblecontainer displayblock" >
+<span><span class="feeditemfirstentity"><a href="/005o0000004BYO5" class="actorentitylink" data-hovid="005o0000004BYO5">Mikael Nilsson</a></span> to Hitachi Data Systems Only</span>             </div>
+<div class="cxfeeditemtextwrapper"><div class="cxfeeditemtextadditional feeditemtextadditional"><span class="feeditemtext cxfeeditemtext"><p> HDS00035937</p></span></div><div class="fadeout hidden"></div><div class="cxmorecontainer"><span class="cxmorelink hidden"><a href="javascript: void(0);" onclick="chatter.getFeed().toggleFeed(this, true);">Show More</a><hr  class="sectionBreak"></span></div></div><div class="feeditemattachments cxfeeditemattachments"></div><div class="feeditemtopics"><div class="topics " id="topicContainer0D51J00002oP7xk"  data-entityId="0D51J00002oP7xk"
+    data-referrer="FEED_ITEM_TOPIC" data-isWidget="false"
+
+     >
+</div>
+</div>    </div>
+    <div class="feeditemfooter">
+        <span class="cxallfeedactions">
+<a href="javascript:void(0);" title="Comment on this post" onclick="chatter.getFeed().showCommentBoxViaAnchor(this, true);" class="feeditemactionlink cxaddcommentaction">Comment</a>    <span class="cxfeeditemcommentdot feeditemseparatingdot">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+
+
+<a href="javascript:void(0);" title="Like this post" onclick="chatter.getFeed().likeItem(this, '0D51J00002oP7xk', 'TextPost');" style="" class="feeditemactionlink cxlikeitemaction">Like</a>
+<a href="javascript:void(0);" title="Stop liking this post" onclick="chatter.getFeed().unlikeItem(this, '0D51J00002oP7xk');" style="display:none;" class="feeditemactionlink cxunlikeitemaction">Unlike</a>
+    <span class="cxfeeditemlikedot feeditemseparatingdot">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+
+
+
+
+            <span class="bookmarked" style="display:none;"><span class="zen-assistiveText">Feeditem is bookmarked</span></span>
+
+<span class="feeditemActionMenu"><div class="zen-select " data-sfdc-widget="SfdcCmp.Ui.Dropdown" role="application"
+
+		data-expandMode="click"
+
+    	data-autoFocus="false"
+
+>
+
+
+	  <a id="spillovermenu0D51J00002oP7xk" class="zen-trigger feeditemActionMenuButton" href="javascript:void(0);" onclick="" title="More Actions" aria-haspopup="true">
+		    <b class=""></b>
+	  </a>
+		<ul class="zen-options " role="menu" aria-labelledby="spillovermenu0D51J00002oP7xk">
+<li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript: void(0);" onclick="chatter.getFeed().bookmark(this, '0D51J00002oP7xk');" role="menuitem" title="Bookmark this post">Bookmark</a></li><li data-sfdc-widget="SfdcCmp.Ui.Option" role="presentation"><a href="javascript: void(0);" onclick="SfdcApp.TopicsFeed.editFromMenu('0D51J00002oP7xk')" role="menuitem" title="Add topics to this post">Add Topics</a></li>		</ul>
+</div>
+</span>        </span>
+        <a href="/0D51J00002oP7xk" title="Click for single-item view of this post." class="feeditemtimestamp">December 10, 2017 at 11:14 PM</a>
+
+&nbsp;
+    </div>
+</div>
+
+        <script type="text/javascript">
+            chatter.getFeed().displayShowMoreAndFadeOut('0D51J00002oP7xk');
+        </script>
+
+        <div class="feeditemextras cxchattertextareacontainer chattertextareacontainer">
+            <div class="cxcomments feeditemcomments" >
+                <div class="cxlikecontainer feedItemExtrasMetaText" >
+<div class="cxfeeditemlike feeditemlike " style="display:block">
+	<span class='like-icon'>&nbsp;</span><span><a href="/005o0000004BYrs">Rokas Pettersen</a> likes this.</span>
+</div>
+                </div>
+            </div>
+<div class="cxnewcomment newCommentContainer" style="display:none">
+    <div class="feeditemcomment feeditemnewcomment feeditemcommenttext">
+                    <div class="feeditemcommentphotocontainer">
+<a href="/0051J000004u6y8" class="feeditemcommentphoto">                    <img src="https://hdscorp--c.na74.content.force.com/profilephoto/7291J000000scDc/T"
+                         title="Chao Liu"
+                         alt="Chao Liu">
+</a>            </div>
+        <div class="feeditemcommentnew  zen">
+            <div class="newcommenttextwrapper">
+                <textarea  class="foobar cxnewcommenttext groupAtMentionsEnabled   chatterTopicsEnabled "
+                           tabindex="0"
+                           role="textbox"
+                           title="Write a comment..."></textarea>
+
+            </div>
+            <div class="cxvalidationmessage cxchattermessagecontainer chattermessagecontainer" style="display:none"></div>
+            <div class="feeditemvisibilitycontainer"></div>
+            	<input class="zen-btn cxnewcommentaction newcommentbutton cxchattersubmit" type="button" value="Comment"
+                	   title="Comment" onclick="chatter.getFeed().newComment(this, '0D51J00002oP7xk', 'TextPost');"/>
+            <div>
+<a href="javascript:void(0);" onblur="chatter.getFeed().contentCommentActionBlur(this);" onfocus="chatter.getFeed().contentCommentActionFocus(this);" onclick="chatter.getFeed().createContentComment(this,'0D51J00002oP7xk', false, true);" onmousedown="chatter.getFeed().contentCommentActionMouseDown(this);" class="cxcontentcommentaction">
+                    <img class="cxcontentcommentactionimg" src="/s.gif">
+                    <span class="cxcontentcommentactiontext">Attach File</span>
+</a>                </div>
+
+            <div class="cxcontentcommentinfo"></div>
+
+            <div class="feedclearfloat"></div>
+        </div>
+    </div>
+</div>
+<div style="display:none" class="feeditemcommentplaceholder cxcommentplaceholder">
+	<label>
+		<span>Click to comment</span>
+	    <input type="text" readonly="true" value="Write a comment..." class="cxcommentplaceholderaction" onclick="return chatter.getFeed().showCommentBoxViaPlaceholder(this);"
+	    onfocus="return chatter.getFeed().showCommentBoxViaPlaceholder(this, true);"
+	    onkeypress="return chatter.getFeed().showCommentBoxViaPlaceholderOnKeyPress(this, event);"
+	    />
+    </label>
+</div>        </div>
+    </div>
+</div>
+
+
+
+    <script type="text/javascript">
+        chatter.getYoutubeVideo().onPageLoaded();
+    </script>
+
+        </div>
+
+        <script type="text/javascript">
+            chatter.getFeed().wire();
+            chatter.getFeed().setItemTypeFilter(null);
+
+
+            chatter.getFeed().onFeedLoad();
+        </script>
+    </div>
+
+    <script type="text/javascript">
+        // Load CKEDITOR only if it is not loaded already. We need to load ckeditor here and not in publisher.ftl for
+        // "edit" use case. On some pages (single feed item view), we do not have publisher but we need CKEDITOR to
+        // edit a post.
+        if(!window.CKEDITOR) {
+            var head= document.getElementsByTagName('head')[0];
+            var script= document.createElement('script');
+            script.type= 'text/javascript';
+            script.src= '/ckeditor/ckeditor-4.x/rel/ckeditor.js?t=4.5.7.9';
+            head.appendChild(script);
+
+            script.onload = function() {
+	            if (window.CKEDITOR) {
+	            	CKEDITOR.timestamp = "4.5.7.9";
+	            }
+            };
+
+        }
+    </script>
+</div></div><div class="feedclearfloat"></div></div></div></div><script>try { chatter.getFeed().initializeFeedFilterReset();} catch(e) {}</script></span>
+
+
+    <a class="c_menu" href="javascript:void(0);" id="contextMenuTrigger">
+        <img src="/s.gif" />
+    </a>
+
+
+    <div class="shareDlg_progressCt" id="postProgressMask" style="visibility: hidden;">
+        <div class="shareDlg_commentMsg" id="postProgressMsg"></div>
+    </div>
+
+    <div class="dashboardViewPageHeader"><div id="thePage:j_id28" style="padding: 20px 0 0 0;" class="dashboardHeader"><div id="thePage:j_id29" class="dashboardFinderContainer"><span id="thePage:j_id30:dashboardFinder:finder:autoCompleteCombo:j_id33"></span><div id="thePage:j_id30:dashboardFinder:finder:autoCompleteCombo:comboContainer" style="float:left;">
+
+        <script>
+
+            var configObj = {};
+            configObj['acErrorNotFound'] = "No dashboards matched your search.";
+            configObj['acWidth'] = 350;
+            configObj['acExpandedWidth'] = 582;
+            configObj['acInitialText'] = "Find a dashboard...";
+            configObj['acPagingToolbarPrevious'] = "Previous";
+            configObj['acOnSelect'] = function(value) {var onSelectFunc = function(dashboardId) { if(dashboardId) {navigateToUrl('/' + dashboardId, 'DASHBOARD');} }; onSelectFunc(value);};
+            configObj['acPagingToolbarNext'] = "Next";
+            configObj['acFolder'] = "acFolder";
+            configObj['acPagingToolbarPageSize'] = 0;
+            // Add the datastoreUrl as an attribute to the config object so that the same can be accessed by the DashboardFinderCombo
+            configObj['datastoreUrl'] = "/dash/dashboardFinderServlet.apexp";
+
+            SFDC.analytics.GwtModuleManager.INSTANCE.onReady(function(){
+                sfdc.DashboardFinderCombo.create(this, 'thePage:j_id30:dashboardFinder:finder:autoCompleteCombo:comboContainer', configObj);
+            });
+        </script></div><div id="thePage:j_id30:dashboardFinder:finder:autoCompleteCombo:j_id39" style="clear:both;"></div></div><div id="thePage:j_id40" class="buttonBarContainer"><input value="Refresh"  class="btn" id="refreshInput" name="refresh" onclick="javascript: sfdc.dashboardView.doRefresh(false);" title="Refresh" type="button" /></div><div id="thePage:j_id50" class="refreshLabelContainer">
+                       <div><span style="January 1, 2018 at 8:54 PM" class="viewHeaderLabel">As of </span>
+                           <span class="viewHeaderValue" id="db_refresh_time">January 1, 2018 at 8:54 PM</span>
+                       </div></div><div id="thePage:j_id54" class="userLabelContainer pbHelp">
+                       <div id="db_data_for"><div id="thePage:j_id56"><span class="viewHeaderLabel">Viewing as</span> <span class="viewHeaderValue">Navkaran Singh</span></div><div id="thePage:j_id64" style="clear:both;"></div>
+                       </div></div><div id="thePage:j_id66" style="clear:both;"></div></div><div id="thePage:j_id67" style="display: none" class="errorMsg">
+            <div id="running_user_error">&#160;
+            </div></div><span id="thePage:j_id72" style="display: none;"></span><div id="thePage:j_id80" style="clear:both;"></div>
+
+    </div>
+
+    <div class="dashboardViewPageBody" id="pbBody"><span class="dashboardNote"></span>
+
+
+            <div id="componentContentArea"><table class="componentTable">
+<tbody>
+<tr>
+<td class="dashMed col1"><div id="thePage:j_id85:j_id86:j_id88"><div id="thePage:j_id85:j_id86:j_id550:j_id98:j_id103:j_id104:j_id105:j_id106:j_id107" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id550:j_id98:j_id103:j_id104:j_id105:j_id106:j_id108:j_id109:j_id110" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">Pipeline by Quarter</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLec" id="dashboard_0_0"><div id="thePage:j_id85:j_id86:j_id550:j_id98:j_id103:j_id104:j_id105:j_id106:j_id117" class="shadow"><div id="thePage:j_id85:j_id86:j_id550:j_id98:j_id103:j_id104:j_id105:j_id106:j_id118" class="cContent"><a href="/00O1J0000067eQT?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhS&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=column&amp;cs=2&amp;title=Current+Fiscal+Year&amp;eh=no&amp;compo=yes&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Bill+Date&amp;dl2=Rev+Class&amp;l=1&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eQT%3Fdbw%3D1&amp;sd=1&amp;scv=no&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1515101036000" alt="Current Fiscal Year - Click to go to full report." class="chart" id="01a1J000002aLecImg" title="Current Fiscal Year - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id550:j_id98:j_id103:j_id104:j_id105:j_id106:j_id121:j_id122:j_id123" class="cFooter">Canada- Forecast Weekly Details</span></div><div id="thePage:j_id85:j_id86:j_id551:j_id143:j_id148:j_id149:j_id150:j_id151:j_id152" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id551:j_id143:j_id148:j_id149:j_id150:j_id151:j_id153:j_id154:j_id155" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">Top 10 Opportunities in Forecast</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLef" id="dashboard_0_1"><div id="thePage:j_id85:j_id86:j_id551:j_id143:j_id148:j_id149:j_id150:j_id151:j_id162" class="shadow"><div id="thePage:j_id85:j_id86:j_id551:j_id143:j_id148:j_id149:j_id150:j_id151:j_id163" class="cContent"><a href="/00O1J0000067eRR?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhV&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=bar&amp;cs=0&amp;title=Current+Quarter&amp;eh=no&amp;compo=yes&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Opportunity+Name&amp;dl2=&amp;l=2&amp;sax=yes&amp;Yman=no&amp;nc=10&amp;actUrl=%2F00O1J0000067eRR%3Fdbw%3D1&amp;sd=4&amp;scv=yes&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1514868844000" alt="Current Quarter - Click to go to full report." class="chart" id="01a1J000002aLefImg" title="Current Quarter - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id551:j_id143:j_id148:j_id149:j_id150:j_id151:j_id166:j_id167:j_id168" class="cFooter">Canada - Current Fiscal Quarter Top Opps</span></div>
+
+    <span id="01a1J000002aLei"></span><div id="thePage:j_id85:j_id86:j_id552:j_id188:j_id193:j_id194:j_id196:j_id197:j_id198" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id552:j_id188:j_id193:j_id194:j_id196:j_id197:j_id199:j_id200:j_id201" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">Attainment Speedometer</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLei" id="dashboard_0_2"><div id="thePage:j_id85:j_id86:j_id552:j_id188:j_id193:j_id194:j_id196:j_id197:j_id208" class="shadow"><div id="thePage:j_id85:j_id86:j_id552:j_id188:j_id193:j_id194:j_id196:j_id197:j_id209" class="cContent"><a href="/00O1J0000067eRW?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhW&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=gauge&amp;cs=0&amp;title=Current+Year+%28Product+Only%29&amp;eh=no&amp;compo=no&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Rev+Rec+Date&amp;dl2=&amp;l=2&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRW%3Fdbw%3D1&amp;sd=1&amp;scv=no&amp;sct=yes&amp;spt=yes&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gm=0.0&amp;gc0=-4048588&amp;gm0=8626964.0&amp;gc1=-18595&amp;gm1=1.7515352E7&amp;gc2=-16748181&amp;gm2=2.6142317E7&amp;sona=0&amp;refreshts=1514868845000" alt="Current Year (Product Only) - Click to go to full report." class="chart" id="01a1J000002aLeiImg" title="Current Year (Product Only) - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id552:j_id188:j_id193:j_id194:j_id196:j_id197:j_id212:j_id213:j_id214" class="cFooter">Canada - EMT Report</span></div><div id="thePage:j_id85:j_id86:j_id553:j_id234:j_id239:j_id240:j_id241:j_id242:j_id243" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id553:j_id234:j_id239:j_id240:j_id241:j_id242:j_id244:j_id245:j_id246" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">District Ranking by Revenue</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLek" id="dashboard_0_3"><div id="thePage:j_id85:j_id86:j_id553:j_id234:j_id239:j_id240:j_id241:j_id242:j_id253" class="shadow"><div id="thePage:j_id85:j_id86:j_id553:j_id234:j_id239:j_id240:j_id241:j_id242:j_id254" class="cContent"><a href="/00O1J0000067eRl?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhZ&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=bar&amp;cs=0&amp;title=Current+Year&amp;eh=no&amp;compo=yes&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=District&amp;dl2=&amp;l=2&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRl%3Fdbw%3D1&amp;sd=4&amp;scv=yes&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1514868845000" alt="Current Year - Click to go to full report." class="chart" id="01a1J000002aLekImg" title="Current Year - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id553:j_id234:j_id239:j_id240:j_id241:j_id242:j_id257:j_id258:j_id259" class="cFooter">Canada - EMT Report (Current FY)</span></div></div></td>
+<td class="dashMed col2"><div id="thePage:j_id85:j_id86:j_id89"><div id="thePage:j_id85:j_id86:j_id554:j_id279:j_id284:j_id285:j_id286:j_id287:j_id288" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id554:j_id279:j_id284:j_id285:j_id286:j_id287:j_id289:j_id290:j_id291" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle"># of Opportunities in Forecast</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLed" id="dashboard_1_0"><div id="thePage:j_id85:j_id86:j_id554:j_id279:j_id284:j_id285:j_id286:j_id287:j_id298" class="shadow"><div id="thePage:j_id85:j_id86:j_id554:j_id279:j_id284:j_id285:j_id286:j_id287:j_id299" class="cContent"><a href="/00O1J0000067eRM?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhT&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=funnel&amp;cs=0&amp;title=Current+Quarter&amp;eh=no&amp;compo=no&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Rev+Class&amp;dl2=&amp;l=1&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRM%3Fdbw%3D1&amp;sd=4&amp;scv=yes&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=0&amp;vl0=Record+Count&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1515101036000" alt="Current Quarter - Click to go to full report." class="chart" id="01a1J000002aLedImg" title="Current Quarter - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id554:j_id279:j_id284:j_id285:j_id286:j_id287:j_id302:j_id303:j_id304" class="cFooter">Canada - Current Fiscal Year Forecast</span></div><div id="thePage:j_id85:j_id86:j_id555:j_id324:j_id329:j_id330:j_id331:j_id332:j_id333" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id555:j_id324:j_id329:j_id330:j_id331:j_id332:j_id334:j_id335:j_id336" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">Y / Y Attainment</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLeg" id="dashboard_1_1"><div id="thePage:j_id85:j_id86:j_id555:j_id324:j_id329:j_id330:j_id331:j_id332:j_id343" class="shadow"><div id="thePage:j_id85:j_id86:j_id555:j_id324:j_id329:j_id330:j_id331:j_id332:j_id344" class="cContent"><a href="/00O1J0000067eRW?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhX&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=line&amp;cs=0&amp;title=&amp;eh=no&amp;compo=yes&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Rev+Rec+Date&amp;dl2=&amp;l=2&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRW%3Fdbw%3D1&amp;sd=1&amp;scv=no&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1514868845000" alt="Y / Y Attainment - Click to go to full report." class="chart" id="01a1J000002aLegImg" title="Y / Y Attainment - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id555:j_id324:j_id329:j_id330:j_id331:j_id332:j_id347:j_id348:j_id349" class="cFooter">Canada - EMT Report</span></div>
+
+    <span id="01a1J000002aLej"></span><div id="thePage:j_id85:j_id86:j_id556:j_id369:j_id374:j_id375:j_id377:j_id378:j_id379" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id556:j_id369:j_id374:j_id375:j_id377:j_id378:j_id380:j_id381:j_id382" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">Attainment Speedometer</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLej" id="dashboard_1_2"><div id="thePage:j_id85:j_id86:j_id556:j_id369:j_id374:j_id375:j_id377:j_id378:j_id389" class="shadow"><div id="thePage:j_id85:j_id86:j_id556:j_id369:j_id374:j_id375:j_id377:j_id378:j_id390" class="cContent"><a href="/00O1J0000067eRg?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhY&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=gauge&amp;cs=0&amp;title=Current+Quarter+%28Product+Only%29&amp;eh=no&amp;compo=no&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Rev+Rec+Date&amp;dl2=&amp;l=2&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRg%3Fdbw%3D1&amp;sd=1&amp;scv=no&amp;sct=yes&amp;spt=yes&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gm=0.0&amp;gc0=-4048588&amp;gm0=2674359.0&amp;gc1=-18595&amp;gm1=5429759.0&amp;gc2=-16748181&amp;gm2=8104118.0&amp;sona=0&amp;refreshts=1514868844000" alt="Current Quarter (Product Only) - Click to go to full report." class="chart" id="01a1J000002aLejImg" title="Current Quarter (Product Only) - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id556:j_id369:j_id374:j_id375:j_id377:j_id378:j_id393:j_id394:j_id395" class="cFooter">Canada - EMT Report (Current FQ)</span></div><div id="thePage:j_id85:j_id86:j_id557:j_id415:j_id420:j_id421:j_id422:j_id423:j_id424" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id557:j_id415:j_id420:j_id421:j_id422:j_id423:j_id425:j_id426:j_id427" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">District Ranking by Revenue</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLel" id="dashboard_1_3"><div id="thePage:j_id85:j_id86:j_id557:j_id415:j_id420:j_id421:j_id422:j_id423:j_id434" class="shadow"><div id="thePage:j_id85:j_id86:j_id557:j_id415:j_id420:j_id421:j_id422:j_id423:j_id435" class="cContent"><a href="/00O1J0000067eRq?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILha&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=bar&amp;cs=0&amp;title=Current+Quarter&amp;eh=no&amp;compo=yes&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=District&amp;dl2=&amp;l=2&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRq%3Fdbw%3D1&amp;sd=4&amp;scv=yes&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1514868844000" alt="Current Quarter - Click to go to full report." class="chart" id="01a1J000002aLelImg" title="Current Quarter - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id557:j_id415:j_id420:j_id421:j_id422:j_id423:j_id438:j_id439:j_id440" class="cFooter">Canada - EMT Report (Current FQ)</span></div></div></td>
+<td class="dashMed col3"><div id="thePage:j_id85:j_id86:j_id90"><div id="thePage:j_id85:j_id86:j_id558:j_id460:j_id465:j_id466:j_id467:j_id468:j_id469" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id558:j_id460:j_id465:j_id466:j_id467:j_id468:j_id470:j_id471:j_id472" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">$ Value of Forecast</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLee" id="dashboard_2_0"><div id="thePage:j_id85:j_id86:j_id558:j_id460:j_id465:j_id466:j_id467:j_id468:j_id479" class="shadow"><div id="thePage:j_id85:j_id86:j_id558:j_id460:j_id465:j_id466:j_id467:j_id468:j_id480" class="cContent"><a href="/00O1J0000067eRM?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhU&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=funnel&amp;cs=0&amp;title=Current+Quarter&amp;eh=no&amp;compo=no&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Rev+Class&amp;dl2=&amp;l=1&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRM%3Fdbw%3D1&amp;sd=1&amp;scv=yes&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1515101036000" alt="Current Quarter - Click to go to full report." class="chart" id="01a1J000002aLeeImg" title="Current Quarter - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id558:j_id460:j_id465:j_id466:j_id467:j_id468:j_id483:j_id484:j_id485" class="cFooter">Canada - Current Fiscal Year Forecast</span></div><div id="thePage:j_id85:j_id86:j_id559:j_id505:j_id510:j_id511:j_id512:j_id513:j_id514" style="position: relative" class="mComponent containsAChart"><div id="thePage:j_id85:j_id86:j_id559:j_id505:j_id510:j_id511:j_id512:j_id513:j_id515:j_id516:j_id517" class="cHeader brandSecondaryBrd"><table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="title">
+                <h2 class="moduleTitle">Forecast by Rev Class</h2></td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="01a1J000002aLeh" id="dashboard_2_1"><div id="thePage:j_id85:j_id86:j_id559:j_id505:j_id510:j_id511:j_id512:j_id513:j_id524" class="shadow"><div id="thePage:j_id85:j_id86:j_id559:j_id505:j_id510:j_id511:j_id512:j_id513:j_id525" class="cContent"><a href="/00O1J0000067eRM?dbw=1"><img src="/servlet/servlet.ChartServer?rsid=0FL1J000001ILhU&amp;ruid=005o0000002K0u3&amp;did=01Z1J000001Ifa2&amp;s=7&amp;fs=10&amp;tfg=12&amp;tfs=-16777216&amp;explode=0&amp;c=donut&amp;cs=0&amp;title=Current+Quarter&amp;eh=no&amp;compo=no&amp;fg=-16777216&amp;bg1=-1&amp;bg2=-1&amp;bgdir=2&amp;dl1=Rev+Class&amp;dl2=&amp;l=1&amp;sax=yes&amp;Yman=no&amp;nc=0&amp;actUrl=%2F00O1J0000067eRM%3Fdbw%3D1&amp;sd=4&amp;scv=yes&amp;sct=no&amp;spt=no&amp;bd=yes&amp;cu=USD&amp;ab=X&amp;u=0&amp;vt=0&amp;ab2=Y&amp;u2=0&amp;vt2=3&amp;vl0=Sum+of+Net+Revenue+%28converted%29&amp;spoc=no&amp;topn=no&amp;gc0=-1&amp;gc1=-1&amp;gc2=-1&amp;sona=0&amp;refreshts=1515101036000" alt="Current Quarter - Click to go to full report." class="chart" id="01a1J000002aLehImg" title="Current Quarter - Click to go to full report." /></a></div></div>
+        </div><span id="thePage:j_id85:j_id86:j_id559:j_id505:j_id510:j_id511:j_id512:j_id513:j_id528:j_id529:j_id530" class="cFooter">Canada - Current Fiscal Year Forecast</span></div></div></td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+            <script src="/jslibrary/1510689194000/sfdc/DashboardViewAutoComplete.js" type="text/javascript"></script>
+
+
+        <script>
+            sfdc.dashboardview.infoForChatter = {
+                isChatterEnabled: true,
+                followingComponentMap: {"01a1J000002aLej":false,"01a1J000002aLei":false},
+                componentPropertiesMap: {"01a1J000002aLel":{"title":"Current Quarter","type":"Bar"},"01a1J000002aLek":{"title":"Current Year","type":"Bar"},"01a1J000002aLeh":{"title":"Current Quarter","type":"Donut"},"01a1J000002aLeg":{"title":"Untitled Component","type":"Line"},"01a1J000002aLej":{"title":"Current Quarter (Product Only)","type":"Gauge"},"01a1J000002aLei":{"title":"Current Year (Product Only)","type":"Gauge"},"01a1J000002aLed":{"title":"Current Quarter","type":"Funnel"},"01a1J000002aLec":{"title":"Current Fiscal Year","type":"ColumnStacked"},"01a1J000002aLef":{"title":"Current Quarter","type":"Bar"},"01a1J000002aLee":{"title":"Current Quarter","type":"Funnel"}},
+                dashboardTitle: 'Canada Dashboard Q3',
+                dashboardId: '01Z1J000001Ifa2',
+                isChatterGroupMentionsEnabled: true,
+                isDashboardComponentSnapshotEnabled : true,
+                isDynamicDashboard: false,
+                chartWidth: 640
+            };
+            sfdc.dashboardview.POLLING_INTERVAL = 15000;
+            sfdc.dashboardView = new sfdc.dashboardView("01Z1J000001Ifa2", "005o0000002K0u3", 'Navkaran Singh', ['', '', ''],
+                [false, false, false]);
+            sfdc.analytics.quickfind.createUserField(false, sfdc.dashboardView);
+
+            <!--*******************************************************************************************************************************************************-->
+            Ext.onReady(function() {
+            sfdc.dashboardview.createFilterField(false, 'filter1_container', [], sfdc.dashboardView, 0, true);
+            sfdc.dashboardview.createFilterField(false, 'filter2_container', [], sfdc.dashboardView, 1, true);
+            sfdc.dashboardview.createFilterField(false, 'filter3_container', [], sfdc.dashboardView, 2, true);
+            sfdc.dashboardView.updateFilterIndicators();
+            });
+
+        </script>
+    </div>
+
+
+<!-- Body events -->
+<script type="text/javascript">function bodyOnLoad(){setFocusOnLoad();if (typeof(startSessionTimer)!='undefined') {startSessionTimer(); };if (typeof(ActivityReminder)!='undefined') {ActivityReminder.initialize([1485442800000, 1485529200000, 1485615600000, 1485702000000, 1485788400000, 1485874800000, 1485961200000, 1491145200000, 1491231600000, 1493564400000, 1495983600000, 1496070000000, 1506783600000, 1506870000000, 1506956400000, 1507042800000, 1507215600000, 1514732400000, 1514818800000], false, false);};if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};SearchClickLoggingUtil.setClickLoggingServletPath("/_ui/search/logging/SearchClickLoggingServlet");new UnifiedSearchAutoCompleteElement("phSearchInput","/_ui/common/search/client/ui/UnifiedSearchAutoCompleteServlet",1,{},true,null,"phSearchForm",["div","searchOwner","asPhrase","sen"],{},true,3,100);new UnifiedSearchButton("searchButtonContainer", "phSearchButton", "headerSearchRightRoundedCornerMouseOver", "phSearchForm");; if (this.loadChatFrameJs) loadChatFrameJs();SfdcApp.MruHovers.global_data.url='retURL=%2F01Z1J000001Ifa2&isAjaxRequest=1&renderMode=RETRO&nocache=1515481824622';LookupAutoCompleteInputElement.registerSupportedEntities("evt1__09Do0000000caJ5",{});LookupAutoCompleteInputElement.registerSupportedEntities("evt2__09Do0000000caJ5",{});LookupAutoCompleteInputElement.registerSupportedEntities("evt3__09Do0000000caJ5",{});SfdcApp.TopicsFeed.setupHandlers('topicContainer0D51J00002p4vca');SfdcApp.TopicsFeed.setupHandlers('topicContainer0D51J00002oP7xk');if(window.PreferenceBits){window.PreferenceBits.prototype.csrfToken="VmpFPSxNakF4T0Mwd01TMHhNbFF3TnpveE1Eb3lOQzQyT1RoYSw2YmlJM3J5MWljVzZEWW12R2x4VUZiLE1HVXdaalF3";};}function bodyOnBeforeUnload(){if ((window.sfdcPage) && (sfdcPage.executeOnBeforeUnloadQueue)){sfdcPage.executeOnBeforeUnloadQueue();};}function bodyOnFocus(){closePopupOnBodyFocus();}function bodyOnUnload(){}</script>
+<!-- End page content -->
+</td>
+</tr>
+</table>
+</div><div class="bPageFooter noTableFooter"><div><span  class="brandQuaternaryFgr">Copyright © 2000-2018 salesforce.com, inc. All rights reserved.</span>&nbsp;|&nbsp;<a href="http://www.salesforce.com/company/privacy.jsp" class="brandQuaternaryFgr" target="_blank" title="Privacy Statement (New Window)">Privacy Statement</a>&nbsp;|&nbsp;<a href="http://www.salesforce.com/company/security.jsp" class="brandQuaternaryFgr" target="_blank" title="Security Statement (New Window)">Security Statement</a>&nbsp;|&nbsp;<a href="http://www.salesforce.com/company/msa.jsp" class="brandQuaternaryFgr" target="_blank" title="Terms of Use (New Window)">Terms of Use</a>&nbsp;|&nbsp;<a href="javascript:openPopupFocusEscapePounds(%27https://login.salesforce.com/services/auth/sso/00D30000000XsfGEAS/HTAuthProvider?startURL=%252Fapex%252Fhtdoor%253Floc%253Dhelp%2526target%253Daccessibility_overview.htm%2526section%253Daccessibility%2526language%253Den_US%2526release%253D210.17.2%2526instance%253DNA74&amp;site=https%3A%2F%2Fhelp.salesforce.com%27, %27Help%27, 1024, 768, %27width=1024,height=768,resizable=yes,toolbar=yes,status=yes,scrollbars=yes,menubar=yes,directories=no,location=yes,dependant=no%27, false, false);" class="brandQuaternaryFgr" title="508 Compliance (New Window)">508 Compliance</a>&nbsp;|&nbsp;<a href="/lightning/oneAppRedirect" class="brandQuaternaryFgr">Go to Salesforce mobile app</a></div></div><div></div></div><script>var SFDCSessionVars={"uid":"0051J000004u6y8","server":"https://login.salesforce.com/login/sessionserver208.html","act":"u","host":"login.salesforce.com","oid":"00Do0000000IJig","exp":1515489011000};</script><script>var SFDCMktUrl='https://login.salesforce.com/17181/logo180.png';</script><script defer="true" src="/jslibrary/1510689194000/sfdc/Zen.js"></script><script>(function(){var s=document.createElement('SCRIPT');s.async=true;s.defer=true;s.src='/jslibrary/1510689194000/sfdc/SfdcSessionBase208.js';(document.body||document.getElementsByTagName('script')[0]).appendChild(s);})();</script><script>(function(){var s=document.createElement('SCRIPT');s.async=true;s.defer=true;s.src='/jslibrary/1510689194000/sfdc/MarketingSurveyResponse.js';(document.body||document.getElementsByTagName('script')[0]).appendChild(s);})();</script></body></html>
+<!-- page generation time: 455ms -->
